@@ -1,0 +1,135 @@
+css
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f7f3ec;
+    color: #292929;
+    line-height: 1.6;
+}
+
+header {
+    min-height: 90vh;
+    padding: 80px 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.course {
+    font-size: 0.75rem;
+    letter-spacing: 3px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    font-size: clamp(3.5rem, 9vw, 7rem);
+    line-height: 0.95;
+    margin-bottom: 30px;
+}
+
+.intro {
+    max-width: 650px;
+    margin: 8px auto;
+    font-size: 1.1rem;
+}
+
+.keywords {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.keywords span {
+    border: 1px solid #292929;
+    padding: 7px 15px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+}
+
+.about {
+    background: #e9e2d6;
+    padding: 120px 10%;
+}
+
+.about-text {
+    max-width: 850px;
+    margin: auto;
+}
+
+.section-label {
+    font-size: 0.75rem;
+    letter-spacing: 3px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.about h2 {
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    line-height: 1;
+    margin-bottom: 35px;
+}
+
+.about p:not(.section-label) {
+    max-width: 700px;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+
+/* ARTIFACT */
+
+.artifact {
+    padding: 140px 10%;
+    text-align: center;
+}
+
+.artifact h2 {
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    margin-bottom: 25px;
+}
+
+.artifact-description {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    font-size: 1.1rem;
+}
+
+.artifact-button {
+    display: inline-block;
+    background: #292929;
+    color: white;
+    text-decoration: none;
+    padding: 15px 28px;
+    border-radius: 30px;
+    transition: transform 0.2s;
+}
+
+.artifact-button:hover {
+    transform: translateY(-3px);
+}
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 60px 25px;
+    }
+
+    .about,
+    .artifact {
+        padding: 90px 25px;
+    }
+
+}
